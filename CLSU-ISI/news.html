@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="img/logo.png" />
+  <title>CLSU-ISI</title>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;
+  }
+  </style>
+  <script type="text/javascript">
+	tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+	tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+	
+	function GetClock(){
+		var d=new Date();
+		var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+		if(nyear<1000) nyear+=1900;
+		var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+		
+		if(nhour==0){ap=" AM";nhour=12;}
+		else if(nhour<12){ap=" AM";}
+		else if(nhour==12){ap=" PM";}
+		else if(nhour>12){ap=" PM";nhour-=12;}
+		
+		if(nmin<=9) nmin="0"+nmin;
+		if(nsec<=9) nsec="0"+nsec;
+		
+		document.getElementById('clockbox').innerHTML=tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" | "+nhour+":"+nmin+":"+nsec+ap+"";
+	}
+	
+	window.onload=function(){
+		GetClock();
+		setInterval(GetClock,1000);
+	}
+</script>
+</head>
+
+<body bgcolor="black">
+		<div class="container col-lg-12" style="background-color: #fff;">
+			<img src="img/isi.jpg" width="300" height="120">
+		</div>
+		<div class="clearfix"></div>
+            	
+            
+	
+		<div class="container-fluid">
+		 
+		<ol class="breadcrumb">
+			<li><b><p id="clockbox"></p></b> </li>
+			<li style="margin-left: 49%;"><b><a href="https://clsu.edu.ph/">CLSU Main Website</a></b></li>
+			<li><b><a href="">Contact Us</a></b></li>
+			<li><b><a href="">Faculty</a></b></li>
+			<li><b><a href="">Awards</a></b></li>
+		<ol>
+	</div>
+	
+	
+	<div class="container-fluid">
+		<ul class="nav nav-tabs">
+			<li><a href="index.html"><b>Home</b></a></li>
+			<li class="active"><a href="news.html"><b>News</b></a></li>
+			<li><a href="about.html"><b>About</b></a></li>
+			<li><a href="goal.html"><b>Goals</b></a></li>
+			<li><a href="admission.html"><b>Admission Requirements</b></a></li>
+			<li><a href="fee.html"><b>Fees and Matriculation</b></a></li>
+			<li><a href="skills.html"><b>Skills and Employability</b></a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><form class="navbar-form navbar-left">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search">
+					<div class="input-group-btn">
+						<button class="btn btn-default" type="submit">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</div>
+				</div>
+			</form></li>
+		</ul>    
+	</div>
+	
+	<div class="container">
+	<br>
+		
+	<div class="container col-lg-3">
+		<h2>Announcement</h2>
+		<div class="panel panel-info">
+			<div class="panel-heading"><b>Sample Announcement</b></div>
+			<div class="panel-body">Sample Content 
+				<div class=" text-justify"><p>
+				
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+					<!-- Trigger the modal with a button -->
+					<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Read More...</button>
+					<!-- Modal -->
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container col-lg-9">
+
+  <h2>News Archive</h2>
+  <div class="panel panel-info">
+			<!-- <div class="panel-heading"><b>Sample Anouncement</b></div> -->
+			<div class="panel-body">
+				<div class="table-striped table-bordered">    
+							<table class="table-striped table-bordered">
+                            	<tr>
+                                	<!-- <th><center>NEWS ID</center></th> -->
+                                    <th><center>TITLE</center></th>
+                                    <th><center>AUTHOR</center></th>
+                                    <th><center>DATE POSTED</center></th>
+                                    <th><center>TIME POSTED</center></th>
+                                </tr>
+     							
+									
+			<tr>
+				<td><center><a href=''><strong>CLSU got 2nd-place in the ACM-ICPC-Northern Luzon Multiprovincial Level</strong></a><center></td>
+				<td><center>Khavee Agustus Botangen<center></td>
+				<td><center>10/01/2014</center></td>
+				<td><center>06:29:42 PM</center></td>
+			</tr>
+			<tr>
+				<td><center><a href=''><strong>CLSU got 2nd-place in the ACM-ICPC-Northern Luzon Multiprovincial Level</strong></a><center></td>
+				<td><center>Khavee Agustus Botangen<center></td>
+				<td><center>10/01/2014</center></td>
+				<td><center>06:29:42 PM</center></td>
+			</tr>
+			<tr>
+				<td><center><a href=''><strong>CLSU got 2nd-place in the ACM-ICPC-Northern Luzon Multiprovincial Level</strong></a><center></td>
+				<td><center>Khavee Agustus Botangen<center></td>
+				<td><center>10/01/2014</center></td>
+				<td><center>06:29:42 PM</center></td>
+			</tr>
+		                            </table>    
+			<div class="container-fluid text-right">
+				<br><b><p>Total No. of News Published: 3</p></b>
+			</div>
+                        </div> <!-- stripped-table -->
+			</div>
+		</div>
+		
+</div>
+
+
+
+<div class="container col-lg-12">
+	<div class="panel panel-default">
+    <div class="panel-body text-center"><center>Copyright &copy; 2017 • All Rights Reserved <br>
+CENTRAL LUZON STATE UNIVERSITY<br>
+Contents managed by Information System Institute </center></div>
+	</div>
+	</div>
+	</div>
+	
+
+</body>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/bootstrap.js" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" charset="utf-8"></script>
+<script src="js/npm.js" charset="utf-8"></script>
+</html>
